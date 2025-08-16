@@ -1,0 +1,47 @@
+theme = "Builtin Dark"
+font-size = 16
+window-width = 160
+window-height = 40
+
+keybind = super+g=text:\x1bg
+keybind = super+f=text:\x1bf
+keybind = super+b=text:\x1bb
+keybind = super+d=text:\x1bd
+
+# New tab (tmux: Cmd+g c)
+keybind = super+g>c=new_tab
+
+# Split vertically (tmux: Cmd+g %)
+keybind = super+g>shift+5=new_split:right
+
+# Split horizontally (tmux: Cmd+g ")
+keybind = super+g>shift+'=new_split:down
+
+# Navigate splits (tmux: Cmd+g h/j/k/l - arrow_left/down/up/right)
+keybind = super+g>h=goto_split:left
+keybind = super+g>j=goto_split:down
+keybind = super+g>k=goto_split:up
+keybind = super+g>l=goto_split:right
+keybind = super+g>left=goto_split:left
+keybind = super+g>down=goto_split:down
+keybind = super+g>up=goto_split:up
+keybind = super+g>right=goto_split:right
+
+# Next/previous tab (tmux: Cmd+g n/p)
+keybind = super+g>n=next_tab
+keybind = super+g>p=previous_tab
+keybind = super+g>1=goto_tab:1
+keybind = super+g>2=goto_tab:2
+keybind = super+g>3=goto_tab:3
+keybind = super+g>4=goto_tab:4
+keybind = super+g>5=goto_tab:5
+keybind = super+g>6=goto_tab:6
+keybind = super+g>7=goto_tab:7
+keybind = super+g>8=goto_tab:8
+keybind = super+g>9=goto_tab:9
+
+# Zoom split (tmux: Cmd+g z)
+keybind = super+g>z=toggle_split_zoom
+
+# Close current surface (tab/split/window)
+keybind = super+g>x=close_surface
